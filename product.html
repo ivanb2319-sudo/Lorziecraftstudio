@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LORZIECRAFTSTUDIO</title>
+    <link rel="icon" type="image/jpeg" href="Images/Logo.jpg">
+    <link rel="stylesheet" href="style/product.css">
+    <script src="javascript/product.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="name">LORZIECRAFTSTUDIO</h1>
+
+        <div class="searchcontainer">
+            <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+            <button class="search-btn">Search</button>
+        </div>
+
+        <nav class="nav">
+        <div class="total">
+          Total: ₱<span id="total">0</span>
+        </div>
+
+            <button class="buy" onclick="buyItems()">Buy</button>
+            <button class="Back" onclick="window.location.href='mainweb.html'">Back</button>
+            <button class="Log in" onclick="window.location.href='index.html'">Log out</button>
+        </nav>
+    </header>
+
+<div class="shop">
+  <div class="item">
+    <img src="Images/fig1.jpg" alt="Ugly Duckling">
+    <p>Ugly Duckling - ₱120</p>
+    <div class="controls">
+      <button onclick="addItem(prices.lizard, 'lizard')">+</button>
+      <span id="lizard-count">0</span>
+      <button onclick="removeItem(prices.lizard, 'lizard')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig2.jpg" alt="Monkey">
+    <p>Monkey - ₱120</p>
+    <div class="controls">
+      <button onclick="addItem(prices.monkey, 'monkey')">+</button>
+      <span id="monkey-count">0</span>
+      <button onclick="removeItem(prices.monkey, 'monkey')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig3.jpg" alt="Chibi Anime Boy">
+    <p>Chibi Anime Boy - ₱150</p>
+    <div class="controls">
+      <button onclick="addItem(prices.boy, 'boy')">+</button>
+      <span id="boy-count">0</span>
+      <button onclick="removeItem(prices.boy, 'boy')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig4.jpg" alt="Frog"></img>
+    <p>Frog - ₱60</p>
+    <div class="controls">
+      <button onclick="addItem(prices.frog, 'frog')">+</button>
+      <span id="frog-count">0</span>
+      <button onclick="removeItem(prices.frog, 'frog')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig5.jpg" alt="Earth">
+    <p>Earth - ₱50</p>
+    <div class="controls">
+      <button onclick="addItem(prices.earth, 'earth')">+</button>
+      <span id="earth-count">0</span>
+      <button onclick="removeItem(prices.earth, 'earth')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig6.jpg" alt="Orange kitten">
+    <p>Orange kitten- ₱260</p>
+    <div class="controls">
+      <button onclick="addItem(prices.kitten, 'kitten')">+</button>
+      <span id="kitten-count">0</span>
+      <button onclick="removeItem(prices.kitten, 'kitten')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig7.jpg" alt="Chibi Anime Girl">
+    <p>Chibi Anime Girl - ₱150</p>
+    <div class="controls">
+      <button onclick="addItem(prices.girl, 'girl')">+</button>
+      <span id="girl-count">0</span>
+      <button onclick="removeItem(prices.girl, 'girl')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig8.jpg" alt="Crochet Heart">
+    <p>Heart in a Pot - ₱150</p>
+    <div class="controls">
+      <button onclick="addItem(prices.heart, 'heart')">+</button>
+      <span id="heart-count">0</span>
+      <button onclick="removeItem(prices.kitten, 'heart')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig9.jpg" alt="Kuromi">
+    <p>Kuromi - ₱90</p>
+    <div class="controls">
+      <button onclick="addItem(prices.kuromi, 'kuromi')">+</button>
+      <span id="kuromi-count">0</span>
+      <button onclick="removeItem(prices.kuromi, 'kuromi')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig10.jpg" alt="Octupus">
+    <p>Octupus - ₱55</p>
+    <div class="controls">
+      <button onclick="addItem(prices.octupus, 'octupus')">+</button>
+      <span id="octupus-count">0</span>
+      <button onclick="removeItem(prices.octupus, 'octupus')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig11.jpg" alt="Pikachu">
+    <p>Pikachu - ₱120</p>
+    <div class="controls">
+      <button onclick="addItem(prices.pikachu, 'pikachu')">+</button>
+      <span id="pikachu-count">0</span>
+      <button onclick="removeItem(prices.pikachu, 'pikachu')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig12.jpg" alt="Mushroom">
+    <p>Mushroom - ₱80</p>
+    <div class="controls">
+      <button onclick="addItem(prices.mushroom, 'mushroom')">+</button>
+      <span id="mushroom-count">0</span>
+      <button onclick="removeItem(prices.mushroom, 'mushroom')">-</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="Images/fig13.jpg" alt="Stingray">
+    <p>Stingray - ₱100</p>
+    <div class="controls">
+      <button onclick="addItem(prices.stingray, 'stingray')">+</button>
+      <span id="stingray-count">0</span>
+      <button onclick="removeItem(prices.stingray, 'stingray')">-</button>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

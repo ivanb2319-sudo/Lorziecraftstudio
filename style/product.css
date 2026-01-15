@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(135deg, violet, #ff69b4);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows items to move to next line */
+  padding: 15px 30px;
+}
+
+.name {
+  background-color: white;
+  border: 2px solid;
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin: 0;
+  flex: 1; /* allow it to shrink/grow */
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* buttons wrap instead of overlap */
+}
+
+.nav button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  background-color: pink;
+}
+
+.searchcontainer {
+  display: flex;
+  margin-top: 10px;
+  flex: 1; /* allow search bar to shrink */
+}
+
+.search-input {
+  width: 100%; /* full width on small screens */
+  max-width: 200px; /* limit on larger screens */
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-left: none;
+  border-radius: 0 25px 25px 0;
+  background: #fff;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: pink;
+}
+
+.shop {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.item {
+  text-align: center;
+  width: 250px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.controls button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: pink;
+}
+
+.buy {
+  display: block;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.buy:hover {
+  background-color: pink;
+}
+
+.total {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
